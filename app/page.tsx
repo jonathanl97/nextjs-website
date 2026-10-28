@@ -27,16 +27,16 @@ export default function Page() {
 
   return (
     <>
-      <div className="flex flex-col px-4 md:px-16 w-full items-center">
-        <div className="w-full md:w-3/4">
+      <div className="flex flex-col px-4 lg:px-16 w-full items-center">
+        <div className="w-full lg:w-3/4">
           <div className="flex flex-row w-full">
             <div className="flex flex-col w-full text-start justify-self-center">
-              <div className="w-full md:w-3/4 self-center">
+              <div className="w-full self-center">
                 <Carousel planets={planets} onSlideChange={handleSlideChange} />
               </div>
             </div>
           </div>
-          <div className="w-full rounded-md p-4 mb-4 md:mb-8 bg-gray-950 bg-opacity-50 shadow-[0px_4px_20px_5px_rgba(255,255,255,0.5)]">
+          <div className="w-full rounded-md p-4 mb-4 lg:mb-8 bg-gray-950 bg-opacity-50 shadow-[0px_4px_20px_5px_rgba(255,255,255,0.5)]">
             <h1 className="self-start pb-4 text-4xl font-bold">
               {planets?.at(currentSlide)?.title}
             </h1>

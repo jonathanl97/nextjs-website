@@ -35,14 +35,14 @@ export function Carousel({ planets, onSlideChange }: EmblaCarouselProps) {
         <ChevronLeftIcon />
       </button>
       <div
-        className="embla__viewport overflow-hidden w-100 md:w-175"
+        className="embla__viewport overflow-hidden w-100 lg:w-175"
         ref={emblaRef}
       >
         <div className="embla__container flex touch-pan-y touch-pinch-zoom">
           {planets?.map((planet, index) => (
             <div className=" flex-[0_0_100%] min-w-fit" key={index}>
-              <div className="flex w-100 h-100 md:w-175 md:h-175 justify-center items-center">
-                <div className="flex w-50 h-50 md:w-100 md:h-100 rounded-full overflow-hidden bg-black justify-center shadow-[0px_0px_25px_25px_rgba(0,0,0,0.8)] md:shadow-[0px_0px_75px_50px_rgba(0,0,0,0.8)]">
+              <div className="flex w-100 h-100 lg:w-175 lg:h-175 justify-center items-center">
+                <div className="flex w-50 h-50 lg:w-100 lg:h-100 rounded-full overflow-hidden bg-black justify-center shadow-[0px_0px_25px_25px_rgba(0,0,0,0.8)] lg:shadow-[0px_0px_75px_50px_rgba(0,0,0,0.8)]">
                   <Image
                     className="my-auto"
                     src={planet.originalimage.source}
